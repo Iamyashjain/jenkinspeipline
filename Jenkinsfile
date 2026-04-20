@@ -6,7 +6,7 @@ pipeline {
             steps {
                 sh '''
                 mvn --version
-                docker ps
+                netstat -tulpn
                 '''
             }
         }
